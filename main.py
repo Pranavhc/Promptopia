@@ -9,7 +9,7 @@ client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 st.title("🚀 Promptopia")
 st.subheader("Test your prompt engineering skills!")
 
-user_prompt = st.text_area("Enter your prompt:", "the theory of life", placeholder="The prompt is the text that the model uses to generate a response. Use the following controls over the hyperparameters of the Gemini 2.0 Flash LLM to customize the response. Good luck!")
+user_prompt = st.text_area("Enter your prompt:", "", placeholder="The prompt is the text that the model uses to generate a response. Use the following controls over the hyperparameters of the Gemini 2.0 Flash LLM to customize the response. Good luck!")
 
 # Hyperparameter Controls
 temperature = st.slider("Temperature", 0.0, 2.0, 1.0, 0.01)
