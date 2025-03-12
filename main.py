@@ -15,7 +15,7 @@ user_prompt = st.text_area("Enter your prompt:", "", placeholder="The prompt is 
 temperature = st.slider("Temperature", 0.0, 2.0, 1.0, 0.01)
 top_k = st.slider("Top-K Sampling", 0, 5000, 100, 1)
 top_p = st.slider("Top-P (Nucleus Sampling)", 0.0, 1.0, 0.95, 0.01)
-max_output_tokens = st.slider("Max Tokens", 1, 2000, 200, 1)
+max_output_tokens = st.slider("Max Tokens", 1, 10000, 200, 1)
 
 if st.button("Generate Response"):
     st.subheader("LLM Output")
