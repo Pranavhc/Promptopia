@@ -6,6 +6,11 @@ from dotenv import load_dotenv; load_dotenv()
 
 client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
+st.set_page_config(
+    page_title="Promptopia",
+    layout="centered",
+)
+
 st.title("🚀 Promptopia")
 st.subheader("Test your prompt engineering skills!")
 
