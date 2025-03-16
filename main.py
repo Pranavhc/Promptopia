@@ -50,7 +50,7 @@ if user_api_key:
         if st.button("Update Token Count"):
             token_count = len(user_prompt.split())
         
-        if token_count > 10:
+        if token_count > 70:
             st.error("Your prompt exceeds the 70 token limit. Please shorten your prompt.")
         else:
             if st.button("Generate Response"):
