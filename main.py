@@ -44,7 +44,7 @@ if user_api_key:
         
         # Approximate token count using whitespace splitting.
         token_count = len(user_prompt.split())
-        st.write(f"Token count: {token_count}")
+        st.write(f"Token count: {token_count} / 70")
         
         # Button to update the token count.
         if st.button("Update Token Count"):
